@@ -1,36 +1,17 @@
 <html>
 <head>
-  <!-- jQuery library (served from Google) -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <!-- bxSlider Javascript file -->
-  <script src="jquery.bxslider.min.js"></script>
-  <script src="jquery.fitvids.js"></script>
-  <!-- bxSlider CSS file -->
-  <link href="jquery.bxslider.css" rel="stylesheet" />
+  <script src="plugins/jquery-1.11.2.min.js"></script>
+  <script src="plugins/jquery-ui.min.js"></script>
+  <link href="stylesheets/main.css" rel="stylesheet" />
 </head>
 
 <body>
-
-<div class="logo" >
-  <a href="content.html">
-    <img src="images/logo.png" />
-  </a>
-</div>
-<ul class="bxslider">
-  <li><video preload="auto" muted><source src="videos/1.mp4"></video></li>
-  <li><video preload="auto" muted><source src="videos/2.mp4"></video></li>
-</ul>
-
-<script>
-$(document).ready(function(){
-    $('.bxslider').bxSlider({
-      auto: true,
-      video: true,
-      pager: true,
-      controls: false,
-      onSliderLoad: function(){ $('video').trigger('play'); }
-    });
-});
-</script>
+  <video preload="auto" muted autoplay loop><source src="videos/1.mp4"></video>
+  <video preload="auto" muted autoplay loop><source src="videos/2.mp4"></video>
+  <div class="overlay" >
+    <a href="content.html">
+      <img src="images/logo.png" />
+    </a>
+  </div>
 </body>
 </html>
