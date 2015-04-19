@@ -1,0 +1,35 @@
+.menu { 
+  margin-top: 200px;
+  margin-left: 20px;
+}
+.container {
+  overflow: hidden;
+}
+.el-info {
+  display: none;
+  letter-spacing: normal;
+  width: 280px;
+  height: 157px;
+	margin: 0;
+  border: 0;
+	padding: 0;
+}
+.item-info {
+  display: block;
+  padding-top: 15px;
+}
+.img-el {
+  width: 280px;
+  height: 280px;
+}
+ul {
+  list-style-type:none;
+  padding:0px;
+  margin:0px;
+}
+li {
+  text-align: center;
+}
+.active-menu-link {
+  font-weight: bold;
+}
